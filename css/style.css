@@ -1,0 +1,24 @@
+/* variables */
+:root {
+    --base-color: #f4f5f6;
+    --second-color: #444444;
+    --third-color: #254558;
+    --fourth-color: #14a76c;
+    --fifth-color: rgba(234, 31, 31, 0.7);
+}
+
+/* general */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--base-color);
+}
+
+.wrapper {
+    width: 85%;
+    max-width: 1250px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
