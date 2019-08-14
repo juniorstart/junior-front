@@ -65,7 +65,7 @@ body {
     margin-bottom: 1.5rem;
 }
 
-.form-wrapper {
+.forms-wrapper {
     width: 50%;
     max-width: 300px;
     padding: 0.5rem;
@@ -103,7 +103,7 @@ body {
     border: 1px solid var(--third-color);
 }
 
-.tab-group .active {
+.tab-active {
     border: 1px solid var(--third-color);
 }
 
@@ -173,8 +173,12 @@ body {
     color: var(--fourth-color);
 }
 
-.signup-form-wrapper {
+.form-wrapper {
     display: none;
+}
+
+.form-wrapper-active {
+    display: block;
 }
 
 /* footer */
