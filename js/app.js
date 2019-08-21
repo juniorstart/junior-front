@@ -38,9 +38,33 @@ function changeForm() {
     })
 }
 
+function showModal() {
+    console.log("hello")
+    const modal = document.querySelector(".modal");
+    const addBtn = document.querySelector(".add-btn");
+    const close = document.querySelector(".close");
+
+    addBtn.addEventListener("click", function(e) {
+        e.preventDefault();
+
+        modal.style.display = "block";
+    })
+
+    close.addEventListener("click", function() {
+        modal.style.display = "none";
+    })
+
+    window.addEventListener("click", function(e) {
+        if(e.target == modal) {
+            modal.style.display = "none";
+        }
+    })
+}
+
 const init = () => {
-    changeLang();
-    changeForm();
+    // changeLang();
+    // changeForm();
+    showModal();
 };
 
 document.addEventListener("DOMContentLoaded", init);
