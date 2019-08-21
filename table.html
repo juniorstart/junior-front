@@ -29,16 +29,30 @@
             <div class="modal">
                 <div class="modal-content">
                     <span class="close">&times;</span>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio hic maxime, corporis a harum impedit fugiat fugit aut nihil eligendi!
-                    </p>
+                    <form class="form-box add-form">
+                        <label for="company-name">Nazwa firmy</label>
+                        <input type="text" id="company-name" maxlength="20" />
+                        <label for="city">Miasto</label>
+                        <input type="text" id="city" maxlength="20" />
+                        <label for="job-position">Stanowisko</label>
+                        <input type="text" id="job-position" maxlength="20" />
+                        <label for="date-application">Data aplikacji</label>
+                        <input type="date" id="date-application" />
+                        <label for="company-response">Odpowiedź firmy</label>
+                        <input type="text" id="company-response" maxlength="20" />
+                        <label for="links">Linki</label>
+                        <input type="text" id="links" maxlength="20" />
+                        <label for="notes">Notaki</label>
+                        <input type="text" id="notes" maxlength="50" />
+                        <button class="form-btn add-new-btn">Dodaj</button>
+                    </form>
                 </div>
             </div>
             <div class="table" id="results">
                 <div class='theader'>
                     <!--
                     Lp. -> Lp.
-                    Nazwa firmy -> Name company
+                    Nazwa firmy -> Company name
                     Miasto -> City
                     Stanowisko -> Job position
                     Data wysłania CV -> Date of application
